@@ -218,7 +218,7 @@ No... Pues te enseñamos como hacerlo
 
 - [Resolver Aritmética Modular Python](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Aritm%C3%A9tica_ModularPY.md)
 - [Resolver Aritmética Modular Rust](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Aritm%C3%A9tica_ModularRS.md)
-- [Resolver Aritmética Modular Cairo](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Aritm%C3%A9tica_ModularCAIRO.
+- [Resolver Aritmética Modular Cairo](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Aritm%C3%A9tica_ModularCAIRO)
 
 ¡Hasta la próxima! 😉
 - [Link Indice Guía Completa Maths](https://github.com/Starknet-Es/Maths-StarknetEs/tree/main/Gu%C3%ADas%20Completas)
