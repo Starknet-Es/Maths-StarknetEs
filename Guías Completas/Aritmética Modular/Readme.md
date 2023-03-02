@@ -7,6 +7,7 @@ Quizás una de las maneras más sencillas e ilustrativas de entender qué es la 
 
 De modo que si, por ejemplo, un día te dormiste a las 10 pm y pasaste 8 horas durmiendo, entonces te despertaste a las 6 am, ¿cierto?
 
+
 <div align="center">
 <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/1.jpeg" width="400">
 </div>
