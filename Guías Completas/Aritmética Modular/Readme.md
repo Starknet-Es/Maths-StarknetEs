@@ -1,9 +1,9 @@
 ## ¿Qué es la Aritmética Modular y por qué es tan usada en criptografía?
 Quizás una de las maneras más sencillas e ilustrativas de entender qué es la aritmética modular es comprendiendo – o recordando –  cómo funciona un reloj:
 
-- ✅ Generalmente, un reloj tiene forma circular y posee 12 números (del 1 al 12).
-- ✅ Una de sus agujas va girando poco a poco indicando en qué hora del día nos encontramos.
-- ✅ Luego de pasar por las 12, cae de nuevo al número 1, iniciando el ciclo nuevamente
+- Generalmente, un reloj tiene forma circular y posee 12 números (del 1 al 12).
+- Una de sus agujas va girando poco a poco indicando en qué hora del día nos encontramos.
+- Luego de pasar por las 12, cae de nuevo al número 1, iniciando el ciclo nuevamente
 
 De modo que si, por ejemplo, un día te dormiste a las 10 pm y pasaste 8 horas durmiendo, entonces te despertaste a las 6 am, ¿cierto? 😉 👇
 
@@ -17,7 +17,7 @@ Lo interesante en el funcionamiento del reloj es que es cíclico. Hace una espec
 <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/2.jpeg" width="400">
 </div>
 
-Por ese motivo, como es de esperarse, en los relojes no hay ningún número más grande que el 12. A las 12 se da el «reinicio» del que hablábamos anteriormente y se sigue avanzando. Hasta aquí todo bien, pero ¿qué tiene esto que ver con la aritmética modular? 🤔
+Por ese motivo, como es de esperarse, en los relojes no hay ningún número más grande que el 12. A las 12 se da el «reinicio» del que hablábamos anteriormente y se sigue avanzando. Hasta aquí todo bien, pero ¿qué tiene esto que ver con la aritmética modular?
 
 ## Conceptos
 
@@ -100,7 +100,7 @@ Hay varias maneras de ver esto. Una de ellas es decir que cuando haces la divisi
 
 ¡Bien! 18 ≡ 6 (mod 12), es una relación de congruencia. 18 y 6 equivalen a lo mismo en módulo 12
 
-¿Por qué es esto importante? 🤔
+¿Por qué es esto importante?
 
 Evaluemos lo siguiente:
 
@@ -128,8 +128,8 @@ Acá te presento una tabla de resultados. Ten en cuenta que abajo de ella (en el
 
 Las instrucciones son las siguientes:
 
-- ✅ Primero resuelves la potencia
-- ✅ Luego puedes evaluar si el resultado es menor, igual o mayor que 19
+- Primero resuelves la potencia
+- Luego puedes evaluar si el resultado es menor, igual o mayor que 19
 
 Si el resultado es menor a 19, entonces lo tomamos, de lo contrario, lo divides entre 19 y tomas el resto.
 
@@ -168,11 +168,11 @@ Si te digo que tengo esta expresión matemática:
 2 ^ X = 134,217,728
 ```
 
-... Y que necesitas conseguir el valor de la X, ¿qué harías? 🤔
+... Y que necesitas conseguir el valor de la X, ¿qué harías?
 
-Pues, una forma sería ir probando exponentes número por número hasta que el resultado dé 134,217,728 😅
+Pues, una forma sería ir probando exponentes número por número hasta que el resultado dé 134,217,728
 
-Es decir, probar si 2 ^ 2 es igual a 134,217,728; si no, entonces probar 2 ^ 3; si no, 2 ^ 4 y así hasta que dé 134,217,728 🤯
+Es decir, probar si 2 ^ 2 es igual a 134,217,728; si no, entonces probar 2 ^ 3; si no, 2 ^ 4 y así hasta que dé 134,217,728
 
 A esa forma de trabajar se le llama `«fuerza bruta»`, y es un modo muy ineficiente de operar, porque si los números de la expresión matemática dada son lo suficientemente grandes, hasta las mejores computadoras de la actualidad podrían tardar hasta años en calcular el resultado.
 
