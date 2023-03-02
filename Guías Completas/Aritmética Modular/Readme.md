@@ -1,5 +1,5 @@
-## ¿Qué es la Aritmética Modular y por qué es tan usada en criptografía? 🤔
-Quizás una de las maneras más sencillas e ilustrativas de entender qué es la aritmética modular es comprendiendo – o recordando –  cómo funciona un reloj 🕙
+## ¿Qué es la Aritmética Modular y por qué es tan usada en criptografía?
+Quizás una de las maneras más sencillas e ilustrativas de entender qué es la aritmética modular es comprendiendo – o recordando –  cómo funciona un reloj:
 
 - ✅ Generalmente, un reloj tiene forma circular y posee 12 números (del 1 al 12).
 - ✅ Una de sus agujas va girando poco a poco indicando en qué hora del día nos encontramos.
