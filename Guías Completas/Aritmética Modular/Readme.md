@@ -221,7 +221,7 @@ Existen otros motivos por el cual se utiliza, pero en esta ocasión se ha querid
 - [Rust](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Aritm%C3%A9tica_ModularRS.md)
 - [Cairo](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Aritm%C3%A9tica_ModularCAIRO)
 
-Además de eso, acá abajo te dejamos algunos enlaces de interés:
+Además de eso, aquí abajo te dejamos algunos enlaces de interés:
 
 - [Link del Índice de la Guía Completa Maths](https://github.com/Starknet-Es/Maths-StarknetEs/tree/main/Gu%C3%ADas%20Completas)
 - [Link de la explicación de 0xhasher_ en Twitter](https://twitter.com/0xhasher_/status/1559387647642157056)
