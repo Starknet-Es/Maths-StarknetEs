@@ -1,5 +1,3 @@
-ESTE ARCHIVO ES EL QUE DEBES DE COPIAR TU LUEGO EN STARKNET PARA QUE SALGAS DE CONTRIBUIDOR CON BASTANTE MATERIAL, YO TE VOY ENSEÑANDO.
-
 ## ¿Qué es la Aritmética Modular y por qué es tan usada en criptografía? 🤔
 Quizás una de las maneras más sencillas e ilustrativas de entender qué es la aritmética modular es comprendiendo – o recordando –  cómo funciona un reloj 🕙
 
