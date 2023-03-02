@@ -35,7 +35,7 @@ Otro ejemplo podría ser el siguiente:
 
 - El conjunto de los días de la semana: lunes, martes, miércoles, jueves, viernes, sábado y domingo, sería un conjunto finito. Y el módulo sería 7. No hay un octavo día de la semana en ese sistema.
 
-- Lo mismo sucede con los meses. Para ellos se usa el módulo 12. Luego de pasar diciembre (que es el mes número 12 del año), el conteo se reinicia y volvemos a enero (el mes número 1)
+- Lo mismo sucede con los meses. Para ellos se usa el módulo 12. Luego de pasar diciembre (que es el mes número 12 del año), el conteo se reinicia y volvemos a enero (el mes número 1).
 
 En el día a día, frecuentamos hacer operaciones matemáticas con «aritmética ordinaria». Operaciones sencillas, tales como:
 
@@ -59,9 +59,9 @@ Como vimos en el ejemplo del reloj – recordemos: te dormiste a las 10 pm, pasa
 
 En ese ejemplo, los números que sean más grandes que el 12 tienen su «equivalente», es decir, su representación en el reloj (dentro del conjunto finito):
 
-- El 13 es equivalente al 1
-- El 14 es equivalente al 2
-- El 15 es equivalente al 3
+- El 13 es equivalente al 1.
+- El 14 es equivalente al 2.
+- El 15 es equivalente al 3.
 
 ... Y así sucesivamente.
 
@@ -75,10 +75,10 @@ Por lo que la aritmética modular no hace más que permitir maneras peculiares d
 
 Bueno, por varias razones. Vamos por partes:
 
-1. Recordemos que la criptografía se basa en proteger información
-2. La aritmética modular permite establecer problemas computacionalmente muy difíciles de resolver
+1. Recordemos que la criptografía se basa en proteger información.
+2. La aritmética modular permite establecer problemas computacionalmente muy difíciles de resolver.
 
-De modo que `"uniendo las dos premisas anteriores"` la aritmética modular es especialmente útil en criptografía porque permite resguardar información mediante el planteamiento de problemas computacionalmente muy difíciles de resolver
+De modo que `"uniendo las dos premisas anteriores"` la aritmética modular es especialmente útil en criptografía porque permite resguardar información mediante el planteamiento de problemas computacionalmente muy difíciles de resolver.
 
 ## ¿Cómo usar dicha aritmética para establecer esos complicados problemas y proteger información?
 Para entender las razones por la cual este tipo de aritmética es tan usada en criptografía, primero es necesario comprender el concepto de «congruencia»:
@@ -91,7 +91,7 @@ De él comprendimos que 18 es equivalente a 6 en módulo 12. Esa equivalencia pu
 18 ≡ 6 (mod 12)
 ```
 
-Y se lee: «18 es congruente a 6, módulo 12»
+Y se lee: «18 es congruente a 6, módulo 12».
 
 Hay varias maneras de ver esto. Una de ellas es decir que cuando haces la división (sin decimales) de 18 / 12, el resto que da es 6:
 
@@ -215,7 +215,7 @@ Existen otros motivos por el cual se utiliza, pero en esta ocasión se ha querid
 
 ¿Hallaste el valor de la incógnita en: 499 ^ X = 466 (mod 509)?
 
-¿No?... Pues te enseñamos como hacerlo:
+¿No?... Pues te enseñamos cómo hacerlo:
 
 - [Resolver Aritmética Modular Python](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Aritm%C3%A9tica_ModularPY.md)
 - [Resolver Aritmética Modular Rust](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Contracts/Aritm%C3%A9tica_ModularRS.md)
