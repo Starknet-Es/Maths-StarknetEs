@@ -136,7 +136,7 @@ Si el resultado es menor a 19, entonces lo tomamos, de lo contrario, lo divides 
 Por ejemplo:
 
 <div align="center">
-<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/0.jpeg" width="400">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/10.jpeg" width="400">
 </div>
 
 Graficando los resultados obtenidos en ambas tablas, puede apreciarse que usando aritmética «ordinaria» (la de la primera tabla), los resultados siempre son más «grandes» con respecto al anterior, siempre son «crecientes»:
