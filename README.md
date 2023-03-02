@@ -10,7 +10,7 @@
 ## Traducción Starknet Basecamp - Stark Maths
 
 - Puede encontrar las notas originales [aquí](https://bit.ly/starkmaths2023)
-- Puede encontrar Guías completas desde Starknet-Es [aquí]([https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Readme.md](https://github.com/Starknet-Es/Maths-StarknetEs/tree/main/Gu%C3%ADas%20Completas))
+- Puede encontrar Guías completas desde Starknet-Es [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Readme.md](https://github.com/Starknet-Es/Maths-StarknetEs/tree/main/Gu%C3%ADas%20Completas)
 
 ## Temas
 
