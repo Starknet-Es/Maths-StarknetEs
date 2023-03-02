@@ -13,7 +13,7 @@ En resumen, esta sección de "Clases Maths" será un espacio dedicado a profundi
 
 ## Temas
 
-- [Aritmética modular](https://github.com/Nadai2010/Clases-Maths/blob/master/Readme%20Aritm%C3%A9tica.md)
+- [Aritmética modular](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Readme.md)
     - [Guía Completa para Python](https://github.com/Nadai2010/Clases-Maths/blob/master/Contracts/Aritm%C3%A9tica_ModularPY.md)
     - [Guía Completa para Rust](https://github.com/Nadai2010/Clases-Maths/blob/master/Contracts/Aritm%C3%A9tica_ModularRS.md)
     - [Guía Compelta para Cairo 1.0](https://github.com/Nadai2010/Clases-Maths/blob/master/Contracts/Aritm%C3%A9tica_ModularCAIRO.md)
