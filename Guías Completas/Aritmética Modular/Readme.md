@@ -3,9 +3,9 @@ Quizás una de las maneras más sencillas e ilustrativas de entender qué es la 
 
 - Generalmente, un reloj tiene forma circular y posee 12 números (del 1 al 12).
 - Una de sus agujas va girando poco a poco indicando en qué hora del día nos encontramos.
-- Luego de pasar por las 12, cae de nuevo al número 1, iniciando el ciclo nuevamente
+- Luego de pasar por las 12, cae de nuevo al número 1, iniciando el ciclo nuevamente.
 
-De modo que si, por ejemplo, un día te dormiste a las 10 pm y pasaste 8 horas durmiendo, entonces te despertaste a las 6 am, ¿cierto? 😉 👇
+De modo que si, por ejemplo, un día te dormiste a las 10 pm y pasaste 8 horas durmiendo, entonces te despertaste a las 6 am, ¿cierto?
 
 <div align="center">
 <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/1.jpeg" width="400">
@@ -23,7 +23,7 @@ Por ese motivo, como es de esperarse, en los relojes no hay ningún número más
 
 Bien, es hora de aclarar algunos conceptos como: El conjunto finito y el módulo de trabajo.
 
-En este ejemplo, el conjunto de números del 1 hasta el 12 es lo que denominamos conjunto finito. Son números que se van repitiendo cíclicamente en el sistema (las horas del día). Y el 12 es el módulo de trabajo. En este caso, es la cantidad de elementos que hay en el conjunto
+En este ejemplo, el conjunto de números del 1 hasta el 12 es lo que denominamos conjunto finito. Son números que se van repitiendo cíclicamente en el sistema (las horas del día). Y el 12 es el módulo de trabajo. En este caso, es la cantidad de elementos que hay en el conjunto:
 
 <div align="center">
 <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/3.jpeg" width="400">
