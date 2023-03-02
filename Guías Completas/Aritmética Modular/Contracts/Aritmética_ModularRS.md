@@ -5,8 +5,9 @@ Suponiendo que tiene conocimietnos previos sobre Rust y que ha revisado los conc
 - [Aritmetica_Modular_Base.rs](https://github.com/Nadai2010/Clases-Maths/blob/master/Contracts/Rust/Aritmetica_Modular_Base.rs)- Código Base para las diferentes ecuaciones suma, resta, multiplicación y división en aritmética modular.
 - [Aritmetica_Modular.rs](https://github.com/Nadai2010/Clases-Maths/blob/master/Contracts/Rust/Aritmetica_Modular.rs)- Código en para resolver el [ejercio de una expresión matemática](https://github.com/Starknet-Es/Maths-StarknetEs/tree/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular#hagamos-este-ejercicio)
 
-Primero clone este repositorio para tener todo los codigos ejecutadndo
+Primero clone este repositorio para tener todo los codigos ejecutando:
 ```bash
+gh repo clone Starknet-Es/Maths-StarknetEs
 ```
 
 ## Aritmetica Modular Base
