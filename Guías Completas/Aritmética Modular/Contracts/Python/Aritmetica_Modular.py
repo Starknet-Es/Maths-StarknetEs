@@ -17,7 +17,6 @@ def method_2(a,b):
         if result == 466:
             print("Result is:",i)
 
-
 print("Method 2:")
 print("")
 method_2(499,509)
