@@ -61,7 +61,7 @@ También usamos `ℤ*ₚ` para representar un campo finito de enteros mod prime 
 
 Utilizamos campos finitos para la criptografía, porque los elementos tienen representaciones "cortas", exactas y propiedades útiles.
 
-- [Guía Completa con ejemplos desde Starknet-ES](
+---
 
 ### Aritmética modular
 [Véase esta introducción](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
@@ -77,6 +77,8 @@ Cuando escribimos n mod k nos referimos simplemente al residuo cuando n se divid
 El resto debe ser positivo.
 
 - [Guía Completa con ejemplos desde Starknet-ES](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Readme.md)
+
+---
 
 ### Teoría de grupos y campos
 Un grupo es un conjunto de elementos {a,b,c,...} (nos referimos a grupos de números, pero pueden ser cualquier cosa) más una operación binaria, que aquí representamos como `•`. 
@@ -94,6 +96,8 @@ Para ser considerada un grupo, esta combinación debe tener ciertas propiedades
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Subgrupos
 Si un subconjunto de los elementos de un grupo también satisface las propiedades del grupo, entonces es un subgrupo del grupo original.
 
@@ -101,6 +105,8 @@ Si un subconjunto de los elementos de un grupo también satisface las propiedade
 Un grupo finito puede ser cíclico. Esto significa que tiene un elemento generador. Si se empieza en un punto cualquiera y luego se aplica la operación de grupo con el generador como argumento un cierto número de veces, se da la vuelta a todo el grupo y se termina en el mismo sitio, véase más abajo.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ### Encontrar una inversa
 Del pequeño teorema de Fermat
@@ -114,6 +120,8 @@ Sea p = 7 y a = 2. Podemos calcular la inversa de a como:
 Esto es fácil de verificar: 2 x 4 ≡ 1 mod 7.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ### Campos
 Un campo es un conjunto de números enteros junto con dos operaciones llamadas suma y multiplicación.
@@ -130,6 +138,8 @@ Se requiere que las operaciones de campo satisfagan los siguientes axiomas de ca
 6. Distributividad de la multiplicación sobre la suma: `a•(b + c) = (a•b) + (a•c)`.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ### Campos finitos y generadores
 Un campo finito es un campo con un conjunto finito de elementos, como el conjunto de enteros mod p donde p es un primo.
@@ -152,6 +162,8 @@ En un campo finito de orden 𝔮, el polinomio X elevado 𝔮 - X tiene todos lo
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Polinomios
 Un polinomio es una ecuación de la forma
 
@@ -169,6 +181,8 @@ Esto es válido para todas las raíces, volveremos sobre ello más adelante.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Lemma de Schwartz-Zippel
 "diferentes polinomios son diferentes en la mayoría de los puntos".
 
@@ -178,6 +192,8 @@ Los polinomios tienen una propiedad ventajosa, a saber, si tenemos dos polinomio
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Interpolación de Lagrange
 Si tienes un conjunto de puntos, al hacer una interpolación de Lagrange en esos puntos obtienes un polinomio que pasa por todos esos puntos.
 Si tienes dos puntos en un plano, puedes definir una única recta que pase por ambos, para 3 puntos, una única curva de 2º grado `(por ejemplo, 5x2 + 2x + 1)` pasará por ellos, etc.
@@ -186,6 +202,8 @@ Para `n` puntos, puedes crear un polinomio de grado `n-1` que pase por todos los
 ![Graph](/im%C3%A1genes/Lagrange.png)
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ## Sistemas de prueba de conocimiento cero
 ### Qué es una prueba de conocimiento cero
@@ -205,6 +223,8 @@ A menudo, la verificación será automática, realizada por un contrato intelige
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Tipos de sistema ZK
 ![Graph](/im%C3%A1genes/zk.png)
 
@@ -223,6 +243,8 @@ Nos interesa la integridad computacional (CI), por ejemplo, saber que el program
 que escribiste se calculó correctamente.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ### Sucintos o Succinctness
 Exigimos que nuestras pruebas y, en particular, el tiempo de verificación sean sucintos, es
@@ -250,6 +272,8 @@ Normalmente el número de consultas es de 3 - 10, mucho menos que el grado.
 La única aleatoriedad que utilizamos aquí es el muestreo de `z` entre `0,..p-1`, en general la aleatoriedad que utilizamos en el proceso es esencial tanto para la concisión como para el conocimiento cero.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ### Uso de polinomios y restricciones
 #### ¿Por qué no evalúa el verificador los propios polinomios?
@@ -300,6 +324,8 @@ Si `P₁(x)` no cumpliera la restricción (por ejemplo si para un valor de `x,P�
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Códigos Reed Solomon
 Véase [http://pfister.ee.duke.edu/courses/ecen604/rspoly.pdf](http://pfister.ee.duke.edu/courses/ecen604/rspoly.pdf)
 
@@ -315,6 +341,8 @@ El dispositivo que reconstruye la información a partir del vector recibido se d
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ## Integridad Computacional 
 Una de las características (notables) de los sistemas de prueba de conocimiento cero es que pueden utilizarse para demostrar que algún cálculo se ha realizado correctamente.
 Por ejemplo, si tenemos un programa cairo que comprueba que un prover conoce la raíz cuadrada de 25, puede ejecutar el programa para comprobarlo, pero el verificador necesita saber que el cálculo se ha realizado correctamente.
@@ -326,6 +354,8 @@ En la L2 de Starknet nos preocupa principalmente que un lote de transacciones se
 En el contexto de Starknet, la integridad computacional es más importante que el conocimiento cero, todos los datos de Starknet son públicos.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ## Starks
 ### Visión general del proceso Stark
@@ -356,6 +386,8 @@ Por tanto, nuestro plan consiste en
 Queremos lograr una verificación sucinta, en la que el verificador de la declaración CI requiera exponencialmente menos recursos que los necesarios para la repetición ingenua.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ### Aritmetización
 Hay dos pasos
@@ -415,6 +447,8 @@ Las STARKs avanzadas pueden definir más tipos de restricciones para tratar con 
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Crear un polinomio para nuestra traza
 También en este caso definimos un polinomio `f(x)` tal que los elementos de la traza de ejecución son evaluaciones de `f` en potencias de algún generador `g`.
 
@@ -437,6 +471,8 @@ Si la traza difiere de eso, entonces es poco probable que esta expresión produz
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Polinomio de Composición
 Para demostrar eficazmente la validez del rastro de ejecución, nos esforzamos por alcanzar los dos objetivos siguientes:
 
@@ -445,12 +481,16 @@ Para demostrar eficazmente la validez del rastro de ejecución, nos esforzamos p
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Ampliando nuestro polinomio
 Como hemos visto antes, los polinomios pueden utilizarse para construir buenos códigos de corrección de errores, ya que dos polinomios de grado `d`, evaluados en un dominio considerablemente mayor que `d`, son diferentes en casi todas partes.
 
 Observando esto, podemos extender la traza de ejecución pensando en ella como una evaluación de un polinomio en algún dominio, y evaluando este mismo polinomio en un dominio mucho mayor. Extendiendo de manera similar una traza de ejecución incorrecta, se obtiene una cadena muy diferente, lo que a su vez hace posible que el verificador distinga entre estos casos utilizando un pequeño número de consultas.
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ### De las restricciones polinómicas al problema de las pruebas de bajo grado
 
@@ -489,6 +529,8 @@ En [`estas`](https://www.sikoba.com/docs/zklux1_slides_dmitry.pdf) diapositivas 
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Pruebas de bajo grado
 Las pruebas de bajo grado son realmente el corazón del proceso de verificación.
 
@@ -509,6 +551,8 @@ Otra forma de ver esto es que el polinomio de traza correcto combinado con las r
 En general, cabría esperar que los polinomios "correctos" tuvieran un grado de alrededor de `10⁷` , mientras que un prover tramposo que eligiera puntos al azar del campo `𝔽` obtendría, tras la interpolación, polinomios de grado comparable al tamaño del campo, es decir, del orden de `2²⁵⁶`
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ## FRI
 FRI son las siglas de `Fast Reed-Solomon IOP of Proximity`, es un protocolo que establece que un polinomio comprometido tiene un grado limitado.
@@ -544,6 +588,8 @@ Sin embargo, para los provers maliciosos, este grado es uno menos que la longitu
 
 - [Guía Completa con ejemplos desde Starknet-ES]
 
+---
+
 ### Heurística Fiat-Shamir
 Véase [https://aszepieniec.github.io/stark-anatomy/basic-tools](https://aszepieniec.github.io/stark-anatomy/basic-tools)
 
@@ -554,6 +600,8 @@ Funciona proporcionando commitments (compromisos) a los mensajes que formarían 
 ![Graph](/im%C3%A1genes/Shamir.png)
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ### Cairo y el no determinismo
 Nos interesa la integridad computacional y, como hemos visto, todos los pasos de un cálculo pueden representarse como polinomios.
@@ -614,6 +662,8 @@ Así que esto fallaría pero si producimos una pista aceptable.
 `Entonces nuestro código tendrá éxito`
 
 - [Guía Completa con ejemplos desde Starknet-ES]
+
+---
 
 ## Referencias y lecturas complementarias
 - Estos [artículos de medium](https://medium.com/starkware/stark-math-the-journey-begins-51bd2b063c71) de Starkware te llevan a través de las matemáticas a un nivel relativamente alto.
