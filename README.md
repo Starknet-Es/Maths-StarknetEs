@@ -9,7 +9,8 @@
 
 ## Traducción Starknet Basecamp - Stark Maths
 
-Puede encontrar las notas originales [aquí](https://bit.ly/starkmaths2023)
+- Puede encontrar las notas originales [aquí](https://bit.ly/starkmaths2023)
+- Puede encontrar Guías completas desde Starknet-Es [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Readme.md)
 
 ## Temas
 
@@ -54,7 +55,7 @@ Puede encontrar las notas originales [aquí](https://bit.ly/starkmaths2023)
 ### Terminología
 * El conjunto de los números enteros se designa `ℤ`, por ejemplo, con {⋯,-4,-3,-2,-1,0,1,2,3,4,⋯}.
 * El conjunto de los números racionales se designa `ℚ`, por ejemplo, con {...1,3/2,2,22/7...}.
-* El conjunto de los Números Reales se designa `ℝ`, por ejemplo con {2, -4, 613, π, √ 2, ...}.
+* El conjunto de los números reales se designa `ℝ`, por ejemplo con {2, -4, 613, π, √ 2, ...}.
 
 Los fields se denotan por `𝔽`, si son un campo finito o `𝕂` para un campo de números reales o complejos. 
 También usamos `ℤ*ₚ` para representar un campo finito de enteros mod prime p con inversos multiplicativos.
