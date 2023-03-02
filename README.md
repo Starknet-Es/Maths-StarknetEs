@@ -211,6 +211,8 @@ Para `n` puntos, puedes crear un polinomio de grado `n-1` que pase por todos los
 #### Una definición imprecisa
 Es una prueba de que existe o de que sabemos algo, más un aspecto de conocimiento cero, es decir, la persona que verifica la prueba sólo obtiene una información: que la prueba es válida o inválida.
 
+- [Guía Completa con ejemplos desde Starknet-ES]
+
 ### Actores en un sistema a prueba de conocimiento cero
 * Creador - opcional, puede combinarse con el prover
 * Prover (probador)
@@ -221,8 +223,6 @@ El prover creará una prueba para convencer al verificador de que conoce un valo
 El sistema de comprobación puede ser interactivo, en el que el prover y el verificador intercambian mensajes para verificar la prueba, o puede consistir únicamente en que el prover envíe la prueba al verificador, que puede aceptarla o rechazarla en un solo paso.
 
 A menudo, la verificación será automática, realizada por un contrato inteligente en Ethereum, por ejemplo.
-
-- [Guía Completa con ejemplos desde Starknet-ES]
 
 ---
 
