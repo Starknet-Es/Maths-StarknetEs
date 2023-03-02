@@ -76,7 +76,7 @@ Cuando escribimos n mod k nos referimos simplemente al residuo cuando n se divid
 ```
 El resto debe ser positivo.
 
-- [Guía Completa con ejemplos desde Starknet-ES]
+- [Guía Completa con ejemplos desde Starknet-ES](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Aritm%C3%A9tica%20Modular/Readme.md)
 
 ### Teoría de grupos y campos
 Un grupo es un conjunto de elementos {a,b,c,...} (nos referimos a grupos de números, pero pueden ser cualquier cosa) más una operación binaria, que aquí representamos como `•`. 
