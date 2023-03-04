@@ -96,6 +96,6 @@ def inv_mult (x):
 
 - [Maths Starknet-Es Estructuras Algebraicas](https://github.com/Starknet-Es/Maths-StarknetEs/tree/main#teor%C3%ADa-de-grupos-y-campos)
 - [Guía Completa de Estructuras Algebraicas](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Readme.md)
-- [Guía de Estructuras Algebraicas Python]()
-- [Guía de Estructuras Algebraicas Rust]()
-- [Guía de Estructuras Algebraicas Cairo 1.0]()
+- [Guía de Estructuras Algebraicas Python](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Contracts/Estructuras_AlgebraicasPY.md)
+- [Guía de Estructuras Algebraicas Rust](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Contracts/Estructuras_AlgebraicasRS.md)
+- [Guía de Estructuras Algebraicas Cairo 1.0](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Contracts/Estructuras_AlgebraicasCAIRO.md)
