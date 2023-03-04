@@ -12,7 +12,7 @@ gh repo clone Starknet-Es/Maths-StarknetEs
 
 ## Estructuras Algebraicas.
 
-Para describir el concepto de estructuras algebraicas, en el documento Readme base de este contenido [(que puede consultar aquí)](https://github.com/Nadai2010/Clases-Maths/blob/master/Estructuras_algebraicas.md) se relacionó a algunos conjuntos numéricos con diversas operaciones matemáticas.
+Para describir el concepto de estructuras algebraicas, en el documento Readme base de este contenido [(que puede consultar aquí)](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Readme.md) se relacionó a algunos conjuntos numéricos con diversas operaciones matemáticas.
 
 Para ejecutar los comandos dentro de la carpeta donde se encuentra nuestros archivo Python ejecute
 
