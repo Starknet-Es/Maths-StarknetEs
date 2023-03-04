@@ -95,7 +95,7 @@ Para ser considerada un grupo, esta combinación debe tener ciertas propiedades
 4. Elemento inverso.
     * Para cada a en G, existe un elemento b en G, comúnmente denotado α⁻¹ (o -a, si la operación se denota "+"), tal que a • b = b • a = e, donde e es el elemento identidad.
 
-- [Guía Completa con ejemplos desde Starknet-ES]
+- [Guía Completa con ejemplos desde Starknet-ES](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Readme.md)
 
 ---
 
