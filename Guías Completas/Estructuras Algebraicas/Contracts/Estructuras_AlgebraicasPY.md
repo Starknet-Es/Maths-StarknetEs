@@ -2,7 +2,7 @@
 
 Suponiendo que tiene conocimientos previos sobre Python y que ha revisado el material de Aritmetica modular, nos centraremos en ejecutar varios contratos y ver los resultados.
 
-- [Estructuras_Algebraicas.py](https://github.com/Nadai2010/Clases-Maths/blob/master/Contracts/Estructuras_AlgebraicasPY.md)
+- [Estructuras_Algebraicas.py](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Contracts/Python/Estructuras_Algebraicas.py)
 
 
 Primero clone este repositorio para tener todos los códigos ejecutando
