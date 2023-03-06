@@ -75,13 +75,18 @@ fn distributiva_multiplicacion_sobre_suma(a: i32, b: i32, c: i32) -> bool {
 Trabajando con números enteros, si la operación del grupo es la suma, entonces el inverso de `x será -x`; es el elemento con el que tengo que sumar a x para que el resultado sea 0.
 
 ```rust
-
+# función para calcular el inverso aditivo de un número
+def inv_aditivo(x):
+    inverso_aditivo = -x
+    return inverso_aditivo
 ```
 
 El inverso multiplicativo de x se define como x ^ -1:
 
 ```rust
-
+def inv_mult(x):
+    inverso_multiplicativo = x ** -1
+    return inverso_multiplicativo
 ```
 
 ## Link
