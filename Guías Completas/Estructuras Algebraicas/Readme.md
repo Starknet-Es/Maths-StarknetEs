@@ -1,7 +1,9 @@
 ## Definiendo conceptos criptográficos básicos:
-Hoy le tocó el turno a las estructuras algebraicas:
 
-![Graph]()
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/Estructuras.jpg" width="400">
+</div>
+
+#### Hoy le tocó el turno a las estructuras algebraicas:
 
 ¡Empecemos!
 
@@ -134,9 +136,9 @@ Y, por otra parte, si `a, b y c` pertenecen a A, entonces `a * (b + c) = (a * b)
 
 En definitiva, este es un tema súper interesante y básico para entender cómo funcionan muchísimos sistemas criptográficos. Espero que este material te haya gustado y, sobre todo, que sea de mucha utilidad.
 
-* [Python]
-* [Rust]
-* [Cairo]
+* [Python](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Contracts/Estructuras_AlgebraicasPY.md)
+* [Rust](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Contracts/Estructuras_AlgebraicasRS.md)
+* [Cairo](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Contracts/Estructuras_AlgebraicasCAIRO.md)
 
 Además de eso, aquí abajo te dejamos algunos enlaces de interés:
 
