@@ -1,5 +1,5 @@
 ## Guia de Estructuras Algebraicas para Rust
-Suponiendo que tiene conocimietnos previos sobre Rust y que ha revisado los concpetos de Aritmetica modular, nos centraremos en ejecutar varios contratos y ver los resultados. 
+Suponiendo que tiene conocimientos previos sobre Rust y que ha revisado el material de Aritmetica modular, nos centraremos en ejecutar varios contratos y ver los resultados.
 
 - [Estructuras_Algebraicas.rs](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Estructuras%20Algebraicas/Contracts/Rust/Estructuras_Algebraicas.rs)
 
