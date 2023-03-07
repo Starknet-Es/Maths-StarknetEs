@@ -243,7 +243,7 @@ Un protocolo de conocimiento-cero es, por tanto, el mecanismo utilizado para der
 Nos interesa la integridad computacional (CI), por ejemplo, saber que el programa de Cairo
 que escribiste se calculó correctamente.
 
-- [Guía Completa con ejemplos desde Starknet-ES]
+- [Guía Completa con ejemplos desde Starknet-ES](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Zero%20Knowledge/Readme.md)
 
 ---
 
