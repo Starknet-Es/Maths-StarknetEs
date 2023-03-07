@@ -19,7 +19,7 @@ Para ejecutar los comandos dentro de la carpeta donde se encuentra nuestros arch
 python3.9 zkProof_Base.py
 ```
 
-![Graph]()
+![Graph](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/im%C3%A1genes/zkproofpy2.png)
 
 Este código es un ejemplo de cómo realizar una prueba de conocimiento cero de un valor secreto, utilizando un número aleatorio y una moneda para generar pruebas aleatorias. En este ejemplo, el valor secreto es el número `x` en la expresión 
 
@@ -59,7 +59,12 @@ En el paso 2, se simula un lanzamiento de moneda para determinar si se utilizar�
             print("Puedes comprobar que b ** e = bp =", bp)
 
         else:
+```
+Podrá revisar si ha salido cara, entonces ha sido exitoso pero...
 
+![Graph](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/im%C3%A1genes/zkproofpy4.png)
+
+```rust
             print("La moneda ha salido cruz, entonces:")
             power = (x + e) % N
             print("(x + e) % N =", power)
@@ -69,6 +74,9 @@ En el paso 2, se simula un lanzamiento de moneda para determinar si se utilizar�
             if ybp == b_xe:
                 print("La prueba ha sido exitosa")
 ```
+Si ha salido Cruz, también habrá sido exitoso como hemos explicado en tutorial, hemos demostrado el valor de X sin revelar el secreto.
+
+![Graph](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/im%C3%A1genes/zkproofpy3.png)
 
 
 ## Link
