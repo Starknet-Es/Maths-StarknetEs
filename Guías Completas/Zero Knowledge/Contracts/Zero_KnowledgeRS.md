@@ -25,8 +25,7 @@ Se generará un archivo el cual puede luego ejecutar corriendo en su terminal:
 ./ zkProof_Base
 ```
 
-![Graph]()
-
+![Graph](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/im%C3%A1genes/zkproofrs.png)
 
 Este código es un ejemplo de cómo realizar una prueba de conocimiento cero de un valor secreto, utilizando un número aleatorio y una moneda para generar pruebas aleatorias. En este ejemplo, el valor secreto es el número `x` en la expresión 
 
