@@ -211,7 +211,7 @@ Para `n` puntos, puedes crear un polinomio de grado `n-1` que pase por todos los
 #### Una definición imprecisa
 Es una prueba de que existe o de que sabemos algo, más un aspecto de conocimiento cero, es decir, la persona que verifica la prueba sólo obtiene una información: que la prueba es válida o inválida.
 
-- [Guía Completa con ejemplos desde Starknet-ES]
+- [Guía Completa con ejemplos desde Starknet-ES](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Zero%20Knowledge/Readme.md)
 
 ### Actores en un sistema a prueba de conocimiento cero
 * Creador - opcional, puede combinarse con el prover
@@ -243,7 +243,7 @@ Un protocolo de conocimiento-cero es, por tanto, el mecanismo utilizado para der
 Nos interesa la integridad computacional (CI), por ejemplo, saber que el programa de Cairo
 que escribiste se calculó correctamente.
 
-- [Guía Completa con ejemplos desde Starknet-ES](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Zero%20Knowledge/Readme.md)
+- [Guía Completa con ejemplos desde Starknet-ES]()
 
 ---
 
