@@ -9,7 +9,7 @@ Primero clone este repositorio para tener todos los códigos ejecutando
 gh repo clone Starknet-Es/Maths-StarknetEs
 ```
 
-## Zero Knowlede
+## Zero Knowledge
 
 Para describir el concepto de Zero Knowledge, revise en el documento Readme base de este contenido [(que puede consultar aquí)]()
 
