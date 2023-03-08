@@ -2,7 +2,7 @@
   <h1 style="font-size: larger;">
     <strong>Aritmetización II</strong> 
     </h1>
-    <img src="" width="600">
+    <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.1.png" width="600">
 </div>
 
 
@@ -56,7 +56,9 @@ Ahora pensamos en los elementos de la traza de ejecución como evaluaciones de a
 
 Formalmente:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.2.png" width="300">
+</div>
 
 Este polinomio de grado 512 como máximo puede calcularse por interpolación, y a continuación procedemos a evaluarlo en un dominio mucho mayor⁴, formando un caso especial de codificación Reed-Solomon.
 
@@ -69,20 +71,28 @@ Un hecho básico sobre los polinomios y sus raíces es que si p(x) es un polinom
 
 Además, para toda x≠a, podemos evaluar q(x) calculando:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.3.png" width="300">
+</div>
 
 Por inducción, un hecho similar es cierto para k raíces. A saber, si aᵢ es una raíz de p para todo i=0..k-1, entonces existe un polinomio q de grado deg(p)-k, y en todos los valores menos en estos k, es exactamente igual a:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.4.png" width="300">
+</div>
 
 ### Montaje
 Reformulando la restricción polinómica en términos de f se obtiene el siguiente polinomio:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.5.png" width="300">
+</div>
 
 Hemos definido f tal que las raíces de esta expresión son 1, g, g², ..., g⁵¹¹ si y sólo si las casillas de la traza de ejecución son 0 ó 1. Podemos definir:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.6.png" width="300">
+</div>
 
 Y sabemos por el párrafo anterior que existe un polinomio de grado como máximo 2-deg(f)-512 que concuerda con p en todo x ∉{1, g, g², ..., g⁵¹¹} si y sólo si la traza de ejecución es de hecho una lista de 512 bits (es decir, 0 o 1). Nótese que anteriormente, el prover ha extendido la traza de ejecución a un dominio mayor, por lo que la consulta de los valores polinómicos en ese dominio está bien definida.
 
@@ -91,28 +101,37 @@ Si existe un protocolo por el cual el prover puede convencer⁵ al verificador d
 ## Fibonacci
 El ejemplo que utilizamos a continuación es el de calcular correctamente una sucesión de Fibonacci en Z₉₆₇₆₉ hasta el lugar 512-ésimo. La secuencia se define formalmente por:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.7.png" width="300">
+</div>
 
 Y nuestra afirmación (es decir, la sentencia CI) es que a₅₁₁=62215.
 
 Podemos crear una traza de ejecución para esta sentencia CI simplemente anotando los 512 números:
 
-Foto
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.8.png" width="300">
+</div>
 
 Las **restricciones polinómicas** que utilizamos son:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.9.png" width="300">
+</div>
 
 ### Traslación a polinomios
 También aquí definimos un polinomio f(x) de grado a lo sumo 512, tal que los elementos de la traza de ejecución son evaluaciones de f en potencias de algún generador g.
 
 Formalmente:
-
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.10.png" width="300">
+</div>
 
 Expresando las restricciones polinómicas en términos de f en lugar de A, obtenemos:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.11.png" width="300">
+</div>
 
 Dado que una composición de polinomios sigue siendo un polinomio - la sustitución de la Aᵢ en las restricciones con f(gⁱ) todavía significa que estos son restricciones polinómicas.
 
@@ -124,7 +143,9 @@ El uso de un generador para indexar las filas de la traza de ejecución nos perm
 
 El polinomio de la relación de recurrencia: f(g²x)-f(gx)-f(x) es cero para cada x que indexa una fila en la traza de ejecución, excepto para las dos últimas. Esto significa que 1, g, g², ..., g⁵⁰⁹ son todas raíces de este polinomio de relación de recurrencia (y es de grado como máximo 510), por lo que podemos construir q(x) de la siguiente manera:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.12.png" width="300">
+</div>
 
 En la jerga de STARK, a menudo se denomina polinomio de composición. En efecto, cuando la traza de ejecución original obedece a la relación de recurrencia de Fibonacci, esta expresión concuerda con algún polinomio cuyo grado es como máximo 2 (recuérdese que el grado de f es como máximo 512) en todos los valores excepto estos 510 1, g, g², ..., g⁵⁰⁹ . Sin embargo, el término polinomio de composición es algo engañoso, ya que cuando la traza de ejecución no satisface la restricción polinómica - las evaluaciones de esta expresión difieren de cualquier polinomio de bajo grado en muchos lugares. En otras palabras, se aproxima a un polinomio de bajo grado si y sólo si la CI original es correcta, que era nuestro objetivo.
 
@@ -137,7 +158,9 @@ Para evitar esto, el verificador consulta explícitamente la traza de ejecución
 
 El verificador puede ahora calcular el valor del polinomio de composición en w mediante:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.13.png" width="300">
+</div>
 
 Donde el numerador puede ser calculado usando los valores obtenidos del prover, y el denominador... bueno, ahí está el problema (que fue barrido bajo la alfombra).
 
@@ -147,7 +170,9 @@ Por otro lado, en la práctica, la traza puede estar compuesta por cientos de mi
 
 Aquí es donde la aritmetización es crucial para la concisión, ya que el cálculo de esta expresión para el caso especial en el que las potencias de g forman un subgrupo se puede hacer de manera muy eficiente si uno se da cuenta de ello:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.14.png" width="300">
+</div>
 
 Esta igualdad es cierta porque ambos lados son polinomios de grado |G| cuyas raíces son exactamente los elementos de G.
 
@@ -155,7 +180,9 @@ El cálculo del lado derecho de esta ecuación parece requerir un número de ope
 
 Y el denominador real del polinomio de composición de Fibonacci en cuestión puede obtenerse reescribiéndolo como:
 
-Foto
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.15.png" width="300">
+</div>
 
 Este aparente tecnicismo es la clave para que el verificador pueda ejecutarse en tiempo polilogarítmico, y sólo es posible porque vemos la traza de ejecución como evaluaciones de un polinomio sobre algún subgrupo del campo, y que las restricciones polinómicas en cuestión se mantienen sobre un subgrupo.
 
@@ -188,5 +215,5 @@ StarkWare
 
 ⁵ Tal que el verificador está convencido si y sólo si el prover no está engañando.
 
-
+## Para volver al Indice de los Documentos Oficiales pulse [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Readme.md)
 
