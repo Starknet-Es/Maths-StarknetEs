@@ -2,7 +2,7 @@
   <h1 style="font-size: larger;">
     <strong>Comienza el viaje</strong> 
     </h1>
-    <img src="https://github.com/dimeyad/Matematicas-Stark/blob/main/im%C3%A1genes/1.1.png" width="600">
+    <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/1.1.png" width="600">
 </div>
 
 ## Temas
@@ -62,7 +62,7 @@ Escalabilidad significa que se cumplen simultáneamente dos propiedades de efici
 * **Verificador escalable:** El tiempo de ejecución del verificador es polinómico en el logaritmo del tiempo de reproducción ingenua. En otras palabras, el tiempo de ejecución del verificador es exponencialmente menor que la simple reproducción del cálculo (recuérdese que la "replay" es el método actual de blockchain para lograr la Rendición de Cuentas Inclusiva).
 
 <div align="center">
-<img src="https://github.com/dimeyad/Matematicas-Stark/blob/main/im%C3%A1genes/1.2.png" width="700">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/1.2.png" width="700">
 </div>
 
 Aplique esta noción de escalabilidad a una cadena de bloques. En lugar del modo actual de verificación por repetición ingenua, imagine cómo serán las cosas cuando una cadena de bloques pase a la verificación mediante el uso de sistemas de pruebas. En lugar de limitarse a enviar las transacciones que se añadirán a la cadena de bloques, un nodo verificador tendrá que generar una prueba, pero gracias al verificador escalable su tiempo de ejecución es casi lineal al tiempo de ejecución de la solución de reproducción ingenua. Y el verificador escalable se beneficiará de una reducción exponencial de su tiempo de verificación. Además, a medida que aumente el rendimiento de la cadena de bloques, la mayor parte del efecto recaerá sobre los nodos prover (que podrían funcionar con hardware dedicado, como los mineros), mientras que los verificadores, que constituirían la mayoría de los nodos de la red, apenas se verían afectados.
@@ -111,3 +111,5 @@ Industrias StarkWare
 * ²Formalmente, un sistema de prueba transparente es aquel en el que todos los mensajes del verificador son cadenas aleatorias públicas. Estos sistemas también se conocen como protocolos [Arthur-Merlin](https://en.wikipedia.org/wiki/Arthur%E2%80%93Merlin_protocol)
 
 * ³Esta minimización de los supuestos criptográficos es válida para los STARK interactivos (iSTARK). Los STARKs no interactivos (nSTARKs) requieren la heurística Fiat-Shamir que es una bestia diferente.
+
+## Para volver al Indice de los Documentos Oficiales pulse [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Readme.md)
