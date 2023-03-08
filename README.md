@@ -10,6 +10,7 @@
 ## Traducción Starknet Basecamp - Stark Maths
 
 - Puede encontrar las notas originales [aquí](https://bit.ly/starkmaths2023)
+- Puede encontrar Traducciones de documentos oficiales de MATHS Starkware [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Readme.md)
 - Puede encontrar Guías completas desde Starknet-Es [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Readme.md)
 
 ## Temas
