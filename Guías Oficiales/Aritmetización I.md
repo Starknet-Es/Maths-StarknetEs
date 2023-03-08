@@ -2,7 +2,7 @@
   <h1 style="font-size: larger;">
     <strong>Aritmetización I</strong> 
     </h1>
-    <img src="" width="600">
+    <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.1.png" width="600">
 </div>
 
 ## Temas
@@ -31,7 +31,10 @@ La propia aritmetización consta de dos pasos: el primero consiste en generar un
 ## Recapitulación: Declaraciones de integridad computacional
 En la [entrada anterior]() hablamos de la noción de declaración de integridad computacional ("CI", por sus siglas en inglés), la afirmación de que el resultado de un determinado cálculo es correcto, desde un punto de vista abstracto. Veamos un ejemplo concreto de declaración de integridad computacional: la suma total que debemos pagar en el supermercado se ha calculado correctamente. La prueba convencional de este enunciado concreto es el recibo. Normalmente, los artículos del recibo se enumeran con sus precios, y la suma total se indica en la parte inferior, así:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.2.png" width="300">
+</div>
+
 
 Para simplificar, sólo consideramos que se trata de una afirmación de que la suma es correcta. Para comprobar si esta afirmación CI es válida, se puede repasar la lista -sin saltarse ningún elemento- para calcular la suma total y compararla con el número que aparece al final del recibo. Se trata de un ejemplo muy ingenuo, pero lo utilizaremos más adelante para demostrar la idea de comprobabilidad sucinta.
 
@@ -53,24 +56,32 @@ La traza de ejecución es una tabla que representa los pasos del cálculo subyac
 ### Traza de ejecución
 El tipo de traza de ejecución que queremos generar debe tener la particularidad de ser sucintamente comprobable: cada fila puede verificarse basándose sólo en las filas que están cerca de ella en la traza, y se aplica el mismo procedimiento de verificación a cada par de filas. Esta característica afecta directamente al tamaño de la prueba. Para ejemplificar lo que entendemos por concisamente comprobable, volvamos al recibo del supermercado y añadamos otra columna para el total:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.3.png" width="300">
+</div>
 
 Esta simple adición nos permite verificar cada fila individualmente, dada su fila anterior.
 
 Podemos, por ejemplo, examinar estas dos filas:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.4.png" width="300">
+</div>
 
 y estar convencido de que este paso concreto del cálculo (es decir, el número 16,41) es correcto, ya que `12,96+3,45=16,41`. Observe que se aplica la misma restricción a cada par de filas. Esto es lo que entendemos por restricciones sucintas.
 
 ### Restricciones polinómicas
 Reescribamos el recibo del supermercado (con el total acumulado) en forma de tabla:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.5.png" width="300">
+</div>
 
 Denotemos el valor de la celda en la i-ésima fila y j-ésima columna por Ai,j (denotaremos el subíndice de esta manera ya que [Medium no soporta LaTeX](https://austinstartups.com/medium-needs-to-support-latex-for-math-and-science-67559a93f731)). Ahora podemos reformular las condiciones de corrección como este conjunto de restricciones polinómicas:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.6.png" width="300">
+</div>
 
 Se trata de restricciones polinómicas lineales en Ai,j. Si el conjunto de restricciones polinómicas que utilizamos son de alto grado, esto tiene un efecto adverso sobre la longitud de la prueba y el tiempo que se tarda en generarla. En consecuencia, lo mejor que podemos esperar son restricciones lineales. Nótese que (2) es en realidad una única restricción aplicada varias veces, y el tamaño total del conjunto es independiente de la longitud del comprobante.
 
@@ -102,14 +113,18 @@ Sea A la traza de ejecución del cálculo de la secuencia. La fila i-ésima, den
 
 He aquí la traza de ejecución de la secuencia de Collatz anterior que comienza con 52:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.7.png" width="300">
+</div>
 
 Observe que aquí la traza tiene 6 columnas porque 6 bits son suficientes para representar incluso el mayor número de la secuencia. Si hubiéramos empezado la secuencia con 51, el siguiente número habría sido 154, por lo que la traza de dicha secuencia habría necesitado al menos 8 columnas.
 
 ### Las restricciones polinómicas de la secuencia de Collatz
 Recordemos que las restricciones polinómicas que buscamos son tales que todas ellas se cumplen si y sólo si la traza A describe la secuencia de Collatz dada (empezando por 52, terminando por 1, y la transición entre dos filas consecutivas cualesquiera se hace correctamente). En nuestro ejemplo, la traza A es de tamaño 6x12, es decir, representa una secuencia de Collatz de 12 números de 6 bits. El conjunto de restricciones polinómicas es el siguiente (n=12, m=6):
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.8.png" width="300">
+</div>
 
 Repasemos cada una de las restricciones. Las tres primeras son sencillas:
 
@@ -123,11 +138,15 @@ Examinemos detenidamente las propias restricciones.
 
 Para cualquier i<n-1, denotemos:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.9.png" width="300">
+</div>
 
 Por lo tanto, para cada i<n-1, obtenemos la siguiente restricción:
 
-FOTO
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/2.10.png" width="300">
+</div>
 
 Ai,0 es el bit menos significativo del número i-ésimo, que determina su paridad como número entero, por lo que esta restricción describe la regla de la secuencia de Collatz.
 
@@ -152,4 +171,6 @@ Kineret Segal & Shir Peled
 StarkWare
 
 ---
+
+## Para volver al Indice de los Documentos Oficiales pulse [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Readme.md)
 
