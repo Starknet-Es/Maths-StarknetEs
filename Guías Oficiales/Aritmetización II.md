@@ -110,7 +110,7 @@ Y nuestra afirmación (es decir, la sentencia CI) es que a₅₁₁=62215.
 Podemos crear una traza de ejecución para esta sentencia CI simplemente anotando los 512 números:
 
 <div align="center">
-<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.8.png" width="300">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.8.png" width="100">
 </div>
 
 Las **restricciones polinómicas** que utilizamos son:
