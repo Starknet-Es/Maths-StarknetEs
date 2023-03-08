@@ -2,7 +2,7 @@
   <h1 style="font-size: larger;">
     <strong>Pruebas de bajo grado</strong> 
     </h1>
-    <img src="" width="600">
+    <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/4.png" width="600">
 </div>
 
 # Pruebas de bajo grado
@@ -23,7 +23,7 @@
 - [Conclusión](#Conclusión)
 
 ## Parte 4
-Esta es la cuarta publicación de nuestra serie STARK Math. Si aún no lo ha hecho, le recomendamos que lea los posts 1 ([Comienza el viaje]()), 2 ([Aritmetización I]()) y 3 ([Aritmetización II]()) antes de leer este. Hasta ahora hemos explicado cómo, en STARK, el proceso de Aritmetización nos permite reducir el problema de la Integridad Computacional a un problema de prueba de bajo grado (low degree testing, en inglés).
+Esta es la cuarta publicación de nuestra serie STARK Math. Si aún no lo ha hecho, le recomendamos que lea los posts 1 ([Comienza el viaje](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Comienza%20el%20viaje.md)), 2 ([Aritmetización I](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Aritmetizaci%C3%B3n%20I.md)) y 3 ([Aritmetización II](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Aritmetizaci%C3%B3n%20II.md)) antes de leer este. Hasta ahora hemos explicado cómo, en STARK, el proceso de Aritmetización nos permite reducir el problema de la Integridad Computacional a un problema de prueba de bajo grado (low degree testing, en inglés).
 
 ### La salsa secreta de la concisión
 Las pruebas de bajo grado se refieren al problema de decidir si una función determinada es un polinomio de algún grado acotado, realizando solo un pequeño número de consultas a la función. Las pruebas de bajo grado se han estudiado durante más de dos décadas y son una herramienta central en la teoría de las pruebas probabilísticas. El objetivo de esta publicación es explicar las pruebas de bajo grado con más detalle y describir FRI, el protocolo que usamos para las pruebas de bajo grado en STARK. Esta publicación asume familiaridad con polinomios sobre campos finitos.
@@ -37,7 +37,7 @@ Para hacer que esta publicación tan matemática sea más fácil de digerir, mar
 Antes de discutir las pruebas de bajo grado, primero presentamos un problema un poco más simple como calentamiento: Se nos da una función y se nos pide que decidamos si esta función es igual a algún polinomio de grado menor que alguna constante d, consultando la función en un número "pequeño" de ubicaciones. Formalmente, dado un subconjunto L de un campo F y un límite de grado d, deseamos determinar si f:L➝F es igual a un polinomio de grado menor que d, es decir, si existe un polinomio
 
 <div align="center">
-<img src="" width="700">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/4.1.png" width="300">
 </div>
 
 Sobre F para la cual _p_(_a_) = _f_(_a_) por cada a en L. para valores concretos, puede pensar en un campo de tamaño que es muy grande, digamos 2¹²⁸, y L, que es de tamaño de aproximadamente 10,000,000.
@@ -113,19 +113,19 @@ Hemos visto que, con la ayuda del prover, podemos probar que dos polinomios son 
 Sea f(x) un polinomio de grado inferior a d y supongamos que d es par (en nuestro entorno esto se cumple sin pérdida de generalidad). Podemos escribir f(x)=g(x²)+xh(x²) para dos polinomios g(x) y h(x) de grado inferior a d/2. En efecto, podemos dejar que g(x) sea el polinomio obtenido a partir de los coeficientes pares de f(x), y que h(x) sea el polinomio obtenido a partir de los coeficientes impares de f(x). Por ejemplo, si d=6 podemos escribir
 
 <div align="center">
-<img src="" width="700">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/4.2.png" width="300">
 </div>
 
 lo que significa que
 
 <div align="center">
-<img src="" width="700">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/4.3.png" width="300">
 </div>
 
 y
 
 <div align="center">
-<img src="" width="700">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/4.4%20(1).png" width="300">
 </div>
 
 que es un algoritmo n*log(n) para la evaluación de polinomios (que mejora el algoritmo ingenuo n2). 
@@ -147,7 +147,7 @@ Una nota sobre los dominios: para que el protocolo anterior funcione, necesitamo
 Ahora tenemos que comprobar que el prover no ha hecho trampas. El verifier toma una muestra aleatoria z en L y consulta f₀(z) y f₀(-z). Estos dos valores son suficientes para determinar los valores de g₀(z²) y h₀(z²), como se puede ver por las siguientes dos ecuaciones lineales en las dos "variables" g₀(z²) y h₀(z²):
 
 <div align="center">
-<img src="" width="700">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/4.6.png" width="300">
 </div>
 
 El verifier puede resolver este sistema de ecuaciones y deducir los valores de g₀(z²) y h₀(z²). De ello se deduce que puede calcular el valor de f₁(z²), que es una combinación lineal de los dos. Ahora el verificador consulta f₁(z²) y se asegura de que es igual al valor calculado anteriormente. Esto sirve como indicación de que el compromiso con f₁(x), que fue enviado por el prover en la fase de compromiso, es realmente el correcto. El verifier puede continuar, consultando f₁(-z²) (recordemos que (-z²)∊ L² y que el compromiso sobre f₁(x) fue dado en L²) y deducir de él f₂(z⁴).
@@ -175,4 +175,4 @@ StarkWare
 
 ---
 
-
+## Para volver al Indice de los Documentos Oficiales pulse [aquí](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Readme.md)
