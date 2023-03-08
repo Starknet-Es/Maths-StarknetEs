@@ -139,12 +139,16 @@ Tenga en cuenta que 1, 2, y 4 son las restricciones que se refieren a un único 
 
 La relación de recurrencia de Fibonacci, por el contrario, encarna un conjunto de restricciones sobre toda la traza de ejecución, y se puede reformular alternativamente como:
 
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.12.png" width="300">
+</div>
+
 El uso de un generador para indexar las filas de la traza de ejecución nos permite codificar la noción de "fila siguiente" como una simple relación algebraica. Si x es una fila determinada de la traza de ejecución, gx es la fila siguiente, g²x es la fila posterior, g-¹x es la fila anterior, etcétera.
 
 El polinomio de la relación de recurrencia: f(g²x)-f(gx)-f(x) es cero para cada x que indexa una fila en la traza de ejecución, excepto para las dos últimas. Esto significa que 1, g, g², ..., g⁵⁰⁹ son todas raíces de este polinomio de relación de recurrencia (y es de grado como máximo 510), por lo que podemos construir q(x) de la siguiente manera:
 
 <div align="center">
-<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.12.png" width="300">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.13.png" width="300">
 </div>
 
 En la jerga de STARK, a menudo se denomina polinomio de composición. En efecto, cuando la traza de ejecución original obedece a la relación de recurrencia de Fibonacci, esta expresión concuerda con algún polinomio cuyo grado es como máximo 2 (recuérdese que el grado de f es como máximo 512) en todos los valores excepto estos 510 1, g, g², ..., g⁵⁰⁹ . Sin embargo, el término polinomio de composición es algo engañoso, ya que cuando la traza de ejecución no satisface la restricción polinómica - las evaluaciones de esta expresión difieren de cualquier polinomio de bajo grado en muchos lugares. En otras palabras, se aproxima a un polinomio de bajo grado si y sólo si la CI original es correcta, que era nuestro objetivo.
@@ -159,7 +163,7 @@ Para evitar esto, el verificador consulta explícitamente la traza de ejecución
 El verificador puede ahora calcular el valor del polinomio de composición en w mediante:
 
 <div align="center">
-<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.13.png" width="300">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.14.png" width="300">
 </div>
 
 Donde el numerador puede ser calculado usando los valores obtenidos del prover, y el denominador... bueno, ahí está el problema (que fue barrido bajo la alfombra).
@@ -171,7 +175,7 @@ Por otro lado, en la práctica, la traza puede estar compuesta por cientos de mi
 Aquí es donde la aritmetización es crucial para la concisión, ya que el cálculo de esta expresión para el caso especial en el que las potencias de g forman un subgrupo se puede hacer de manera muy eficiente si uno se da cuenta de ello:
 
 <div align="center">
-<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.14.png" width="300">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.15.png" width="300">
 </div>
 
 Esta igualdad es cierta porque ambos lados son polinomios de grado |G| cuyas raíces son exactamente los elementos de G.
@@ -181,7 +185,7 @@ El cálculo del lado derecho de esta ecuación parece requerir un número de ope
 Y el denominador real del polinomio de composición de Fibonacci en cuestión puede obtenerse reescribiéndolo como:
 
 <div align="center">
-<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.15.png" width="300">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/3.16.png" width="300">
 </div>
 
 Este aparente tecnicismo es la clave para que el verificador pueda ejecutarse en tiempo polilogarítmico, y sólo es posible porque vemos la traza de ejecución como evaluaciones de un polinomio sobre algún subgrupo del campo, y que las restricciones polinómicas en cuestión se mantienen sobre un subgrupo.
