@@ -124,7 +124,7 @@ Y para el producto se tiene que:
 - Dicha operación es asociativa y conmutativa.
 - Existe elemento neutro y todo elemento distinto de 0 tiene inverso.
 
-Y, por otra parte, si `a, b y c` pertenecen a A, entonces `a * (b + c) = (a * b) + (a * c)`
+Y por otra parte, si `a, b y c` pertenecen a A, entonces `a * (b + c) = (a * b) + (a * c)`
 
 ## Algunos ejemplos de cuerpos son:
 
