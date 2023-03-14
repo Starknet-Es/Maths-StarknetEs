@@ -1,8 +1,5 @@
 ## Definiendo conceptos criptográficos básicos:
 
-<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/Estructuras.jpg" width="400">
-</div>
-
 #### Hoy le tocó el turno a las estructuras algebraicas:
 
 ¡Empecemos!
@@ -14,7 +11,8 @@ Leyendo documentación acerca de diversos sistemas criptográficos es habitual c
 ## ¿Qué es un conjunto?
 Un conjunto es una colección de elementos. Podríamos hablar de un conjunto de libros, un conjunto de edificios, conjuntos de números, etc.
 
-(COLOCAR ALGUNA IMAGEN DE TIPOS DE CONJUNTOS).
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Completas/Im%C3%A1genes/Estructuras.jpg" width="400">
+</div>
 
 Los conjuntos, como puede apreciarse, tienen elementos, que pueden ser finitos o infinitos. Piensa por un momento en el conjunto de los días de la semana (lunes, martes, miércoles y así hasta el domingo); ese sería un conjunto finito, ¿cierto?
 
