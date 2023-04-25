@@ -5,7 +5,7 @@
  <h2 style="font-size: medium;">
     <severe>Combinación de pruebas probabilísticas y funciones hash</severe> 
     </h2>  
-    <img src="" width="600">
+    <img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/Imagen%20central.png" width="600">
 </div>
 
 ## Temas
@@ -39,7 +39,9 @@ Consideramos pruebas criptográficas para las declaraciones de integridad comput
 
 Ningún procedimiento (eficiente) debería ser capaz de producir pruebas que parezcan válidas para afirmaciones falsas (por ejemplo, reclamar 𝐀(x)=1 cuando en cambio 𝐀(x)=0). Son posibles declaraciones de CI más generales, donde 𝐀 además toma una entrada auxiliar privada, pero ignoramos esto en esta publicación.
 
-(IMAGEN)
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/5.1.png" width="600">
+</div>
 
 Las STARKs son pruebas criptográficas que cumplen las siguientes propiedades deseables:
 
@@ -70,7 +72,9 @@ En esta sección, presentamos las [pruebas verificables probabilísticamente](ht
 
 Una prueba verificable probabilísticamente (PCP) es un **protocolo** entre un probador PCP y un verificador PCP que permite establecer la exactitud de las declaraciones de integridad computacional (CI) a través de una **verificación local aleatoria en una prueba larga**. Dada una declaración de CI (𝐀,x,y,T), el demostrador PCP produce una cadena de prueba 𝚿 que "codifica" el seguimiento de cálculo de la declaración de CI. Si bien la prueba 𝚿 es más larga que la traza de cálculo de pasos T (la longitud de 𝚿 es cuasilineal en T), 𝚿 tiene la característica notable de que puede validarse a través de una prueba probabilística que lee solo una pequeña parte de 𝚿. Es decir, dada la misma declaración de CI (A,x,y,T), el verificador PCP puede validar 𝚿 leyendo aleatoriamente una pequeña cantidad de ubicaciones de 𝚿 y luego ejecutando una "verificación local" económica en los valores leídos. (¡El número de ubicaciones de lectura puede ser una pequeña constante, como 3, independiente de T!) Si la declaración de CI es verdadera, el verificador siempre acepta. Si, en cambio, la declaración de CI es falsa, entonces el verificador la rechaza con alta probabilidad, independientemente de cómo se haya elegido la cadena de prueba 𝚿. Consulte la Figura 2 para ver un diagrama.
 
-(IMAGEN)
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/5.2.png" width="600">
+</div>
 
 Recuerda que nuestro objetivo es producir demostraciones 𝛑 que sean breves y rápidas de validar. Esto es bastante diferente de los PCP, que en cambio implican controles locales económicos para pruebas largas 𝚿. Entonces, ¿cómo pasamos de 𝚿 a 𝛑?
 
@@ -84,7 +88,9 @@ Para resumir, hemos utilizado la función hash H para realizar un “pre-muestre
 
 [1] : Esta "justificación" de por qué funciona el muestreo previo seguro es solo intuición, y obtener una prueba formal de seguridad requiere algo de trabajo. Por ejemplo, un probador malicioso podría intentar comprometerse con muchas pruebas diferentes 𝚿 en busca de una elección "favorable" de aleatoriedad 𝛒, y luego incluir esta elección favorable en 𝛑. Una prueba de seguridad tendría que establecer que dichos probadores, y de hecho cualquier probador eficiente, fallarán con alta probabilidad.
 
-(IMAGEN)
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/5.3.png" width="600">
+</div>
 
 ## La transparencia proviene de la criptografía
 
@@ -106,7 +112,9 @@ Desafortunadamente, los costos de los PCP siguen siendo muy altos, lo que los ha
 
 Las STARKs eficientes se basan en un tipo de sistema de prueba probabilístico conocido como Pruebas Oraculares Interactivas (IOP, por sus siglas en inglés), que se introdujo en 2015. De manera informal, un probador y un verificador participan en un protocolo interactivo en el que, en cada ronda, el verificador envía algo de aleatoriedad 𝛔ᵢ al probador, y el probador responde con una prueba larga 𝚿ᵢ. Al final de la interacción, el verificador realiza una verificación local aleatoria de todas las pruebas largas (𝚿₁,𝚿₂,…) enviadas por el probador a lo largo de la interacción. Consulte la Figura 4 para ver un diagrama. Tenga en cuenta que un PCP es simplemente un "IOP no interactivo" y, por lo tanto, es un caso restringido.
 
-(IMAGEN)
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/5.4.png" width="600">
+</div>
 
 En los últimos años, los investigadores han desarrollado numerosos principios de diseño para construir IOP altamente eficientes: [BCGV16](https://eprint.iacr.org/2016/021)], [BCGRS16](https://eprint.iacr.org/2016/324), [BB+16](https://eprint.iacr.org/2016/646), [BBGR16](https://eccc.weizmann.ac.il/report/2016/149/), [BCFGRS16](https://eprint.iacr.org/2016/988), [BBHR17](https://eccc.weizmann.ac.il/report/2017/134/), [BBHR18](https://eprint.iacr.org/2018/046), [BCRSVW18](https://eprint.iacr.org/2018/828), [BKS19](https://eccc.weizmann.ac.il/report/2018/090/), [BGKS19](https://eccc.weizmann.ac.il/report/2019/044/). El protocolo IOP que usamos en nuestras construcciones STARKs está más estrechamente relacionado con [BBHR18](https://eprint.iacr.org/2018/046).
 
@@ -120,7 +128,9 @@ Luego, como se describe en nuestra publicación [Aritmetización II](https://git
 
 Pruebas de bajo grado (área gris en la Figura 5). El probador usa el protocolo FRI (descrito en nuestra [publicación de pruebas de bajo grado](https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Prueba%20de%20bajo%20grado.md)) para convencer al verificador de que 𝚽 y 𝚵 son evaluaciones de polinomios de bajo grado. Esto implica participar en un protocolo en el que, en cada ronda, el verificador envía un 𝛔ᵢ aleatorio y el probador responde con una prueba auxiliar 𝚿ᵢ, y al final del protocolo el verificador realiza una verificación local aleatoria de 𝚽, 𝚵 y los 𝚿ᵢ. Si el verificador del protocolo FRI acepta con alta probabilidad entonces 𝚽 y 𝚵 tienen los grados deseados. Si es así, el verificador concluye que la afirmación CI (𝐀,x,y,T) es una afirmación verdadera.
 
-(IMAGEN)
+<div align="center">
+<img src="https://github.com/Starknet-Es/Maths-StarknetEs/blob/main/Gu%C3%ADas%20Oficiales/Im%C3%A1genes%20Oficiales/5.5.png" width="600">
+</div>
 
 ## Pruebas criptográficas a través de la construcción BCS
 
